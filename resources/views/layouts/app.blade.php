@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Booking Clinic') }}</title>
+    
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -32,9 +33,13 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
+                {{-- <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Booking Clinic') }}
+                </a> --}}
+                <p>
+                    <span style="display: inline-block;">Hotline: 02363 86 87 89</span>
+                    <span style="display: inline-block; margin-left: 20px;">Email: pkdongphuong@gmail.com</span>
+                  </p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -106,6 +111,49 @@
         </nav>
 
         <main class="py-4">
+            <div class="menu">
+                <!--Hover menu-->
+    <script language="javascript" type="text/javascript">
+    $(document).ready(function() { 
+        //Hover vào menu xổ xuống
+        $("#menu ul li").hover(function(){
+            $(this).find('ul:first').css({visibility: "visible",display: "none"}).show(300); 
+            },function(){ 
+            $(this).find('ul:first').css({visibility: "hidden"});
+            }); 
+        $("#menu ul li").hover(function(){
+                $(this).find('>a').addClass('active2'); 
+            },function(){ 
+                $(this).find('>a').removeClass('active2'); 
+        }); 
+        
+        
+    });  
+</script>
+<!--Hover menu-->
+<div class="mkdf-grid container">
+    <div class="header">
+    <a href="#menu_mobi" class="hien_menu"><i class="fa fa-bars" aria-hidden="true"></i> <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="header_top_center_logo">
+                <a href=""><img src="upload/hinhanh/logo-3832.png" alt="Phòng Khám Đông Phương Siêu Âm Tốt Nhất Đà Nẵng"></a>
+            </div>
+    {{-- <nav id="menu">
+    <ul>
+    <li><a class="active" href=""><i class="icofont-home"></i><br> Trang chủ</a></li>
+    <li><a class="" href="gioi-thieu.html"><i class="icofont-printer"></i> <br>Giới Thiệu</a></li>
+    <li><a class="" href="dich-vu.html"> <i class="icofont-medical-sign"></i><br>Dịch Vụ</a></li>
+    <li><a class="" href="cam-nang.html"><i class="icofont-file-document"></i><br>Cẩm nang</a></li>
+    <li><a class="" href="video.html"><i class="icofont-video-alt"></i><br>Video</a></li>
+    <li><a class="" href="tuyen-dung.html"><i class="icofont-file-document"></i><br>Tuyển Dụng</a></li>
+    <li><a class="" href="lien-he.html"><i class="icofont-contacts"></i><br>Liên Hệ</a></li>
+    </ul>
+    </nav> --}}
+    <div class="clear"></div>
+
+    </div>
+            </div>
+            {{-- <div class="menu">Test </div> --}}
             @yield('content')
         </main>
     </div>
