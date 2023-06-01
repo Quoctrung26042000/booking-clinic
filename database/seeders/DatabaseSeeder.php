@@ -36,6 +36,20 @@ class DatabaseSeeder extends Seeder
             'role_id' => 2,
             'gender' => 'male'
         ]);
+        User::create([
+            'name' => 'User',
+            'email' => 'user@gmail.com',
+            'password' => bcrypt('password'),
+            'role_id' => 3,
+            'gender' => 'female'
+        ]);
+        User::create([
+            'name' => 'Doctor',
+            'email' => 'doctor@gmail.com',
+            'password' => bcrypt('password'),
+            'role_id' => 1,
+            'gender' => 'male'
+        ]);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
