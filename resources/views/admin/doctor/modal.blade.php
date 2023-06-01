@@ -19,10 +19,11 @@
             <p>Department: {{ $doctor->department }}</p>
             <p>Education: {{ $doctor->education }}</p>
             <p>Description: {{ $doctor->description }}</p>
+            <p>Password: {{ $doctor->password }}</p>
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
