@@ -17,9 +17,34 @@
             @endif
         </div>
     </div>   <!-- end row -->
- 
     <hr>
-
+{{-- 
+<div class="box_gioithieu">
+    <div  class="chinhsach_conten">
+        <div class="row"> 
+            <div class="item_cs col-md-4">
+                <div class="item_cs_top">
+                    <div class="img_cs">
+                        <img src="upload/news/1.png" alt="Khám và Chữa Bệnh">
+                    </div>
+                </div>
+                <div class="item_cs_top_info">
+                    <span>Nhiều năm kinh nghiệm</span>
+                    <h3>Khám và Chữa Bệnh</h3>
+                </div>
+                <div class="info_cs">
+                    <p>Phòng Khám Đa Khoa Đông Phương luôn mong muốn đem đến cuộc sống khỏe mạnh cho mọi người, mọi nhà.</p>  
+                </div>
+            </div>
+            <div class="item_cs col-md-4">
+                <p>Test</p>
+            </div>
+            <div class="item_cs col-md-4">
+                <p>Test</p>
+            </div>
+        </div> 
+    </div>
+</div> --}}
     <!-- date picker component -->
     <find-doctor>
 

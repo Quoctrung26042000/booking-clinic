@@ -137,27 +137,15 @@
     </div>
     <div class="header_top_center_logo">
                 <a href=""><img src="upload/hinhanh/logo-3832.png" alt="Phòng Khám Đông Phương Siêu Âm Tốt Nhất Đà Nẵng"></a>
-            </div>
-    {{-- <nav id="menu">
-    <ul>
-    <li><a class="active" href=""><i class="icofont-home"></i><br> Trang chủ</a></li>
-    <li><a class="" href="gioi-thieu.html"><i class="icofont-printer"></i> <br>Giới Thiệu</a></li>
-    <li><a class="" href="dich-vu.html"> <i class="icofont-medical-sign"></i><br>Dịch Vụ</a></li>
-    <li><a class="" href="cam-nang.html"><i class="icofont-file-document"></i><br>Cẩm nang</a></li>
-    <li><a class="" href="video.html"><i class="icofont-video-alt"></i><br>Video</a></li>
-    <li><a class="" href="tuyen-dung.html"><i class="icofont-file-document"></i><br>Tuyển Dụng</a></li>
-    <li><a class="" href="lien-he.html"><i class="icofont-contacts"></i><br>Liên Hệ</a></li>
-    </ul>
-    </nav> --}}
+    </div>
     <div class="clear"></div>
-
     </div>
             </div>
-            {{-- <div class="menu">Test </div> --}}
             @yield('content')
+            
         </main>
     </div>
-
+    
     <script>
         var dateToday = new Date();
         $( function() {

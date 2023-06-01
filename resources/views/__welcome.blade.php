@@ -15,9 +15,7 @@
             </div>
         </div>
     </div>   <!-- end row -->
- 
     <hr>
-
     <!-- search doctors -->
     <form action="{{ route('find.doctor') }}" method="GET">
         <div class="card">
